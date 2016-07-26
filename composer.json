@@ -1,0 +1,30 @@
+{
+    "name": "jeremygiberson/semver-watcher",
+    "description": "semantic version static analysis service",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremy Giberson",
+            "email": "jeremygiberson@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:tomzx/php-semver-checker.git"
+        }
+    ],
+    "require": {
+        "jeremygiberson/psr7-push-notification-middleware": "dev-master",
+        "eventio/bbq": "dev-master",
+        "monolog/monolog": "^1.20",
+        "sebastian/git": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "SemverWatcher\\": "src/"
+        }
+    }
+}
